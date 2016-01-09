@@ -29,6 +29,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         mealNameLabel.text = "Default Text"
     }
     
+    
+    // "single key" passing, as required for DCSS client. okay. 
+    // interesting that "event connection" is done in IDE and saved in 
+    // NIB (storyboard) file. hmm. 
+    @IBAction func followInput(sender: UITextField) {
+//        if let s: String = sender.text
+//        {
+//            let i = s.endIndex
+//            mealNameLabel.text = s.substringFromIndex(i.advancedBy(-1))
+//            nameTextField.text = mealNameLabel.text
+//        }
+    }
+    
     // MARK: UITextFieldDelegate
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
